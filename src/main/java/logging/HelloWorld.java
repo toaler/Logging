@@ -7,9 +7,9 @@ import org.slf4j.LoggerFactory;
  * Simple example of how to use slf4j logger
  */
 public class HelloWorld {
+	private static final Logger LOGGER = LoggerFactory.getLogger(HelloWorld.class.getCanonicalName());
 
 	public static void main(final String[] args) {
-		final Logger logger = LoggerFactory.getLogger(HelloWorld.class.getCanonicalName());
-		logger.debug("Hello world.");
+		LOGGER.debug("Hello world.");
 	}
 }
